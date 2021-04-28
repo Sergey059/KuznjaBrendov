@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+
+		<meta charset="utf-8">
+		<!-- <base href="/"> -->
+		<title>Тестовое задание Кузня Брендов</title>
+		<meta name="description" content="Тестовое задание Кузня Брендов">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" href="images/favicon.png">
+		<meta property="og:image" content="images/dist/preview.png">
+		<link rel="stylesheet" href="css/main.min.css">
+
+	</head>
+
+	<body>
+		<div class="wrap">
+
+			<header class="header">
+				<p class="header__text">front<span class="text_white">_test</span></p>
+				<h1 class="header__title">
+					Тестовое задание
+				</h1>
+				<p class="header__desc text_white">Сверстайте эту страницу включая интерактивные элементы.</p>
+			</header>
+
+			<main class="content">
+
+				<section>
+					<div class="content__item model">
+						<div class="model__body">
+							<div class="model__container">
+								<canvas class="model__webgl"></canvas>
+							</div>
+							<p class="content__desc content__desc_294">Анимация: вращение вокруг своей оси автоматически, или с реакцией на мышку.</p>
+							<p class="content__desc content__desc_416 text_white">3D модель лисы в формате fbx лежит
+								<a href="https://yadi.sk/d/bKSQJlQ80fzHig" target="_blank" rel="noopener">в файлах проекта</a>.
+								Можно использовать любую другую модель.
+							</p>
+						</div>
+					</div>
+					
+					<div class="content__item card">
+						<div class="card__wrap">
+							<div class="card__body">
+								<img src="images/dist/infinity.png" alt="infinity" class="card__img">
+								<h2 class="card__title">
+									Интерактивная карточка
+								</h2>
+								<p class="card__desc">
+									Должна вращаться за мышкой
+								</p>
+								<button class="btn card__btn">
+									Кнопка
+								</button>
+							</div>
+							<span class="card__birds-left"></span>
+							<span class="card__birds-right"></span>
+						</div>
+						<p class="content__desc content__desc_294">
+							Анимация: карточка отклоняется по направлению к курсору. Верхний и нижний слой с птицами повторяет движение карточки с легким параллаксом.
+						</p> 
+					</div>
+				</section>
+
+				<section>
+					<div class="content__item form">
+
+						<form class="form__body" method="POST" autocomplete="off" novalidate>
+
+							<h2 class="form__title">Форма</h2>
+							<p class="form__desc">Дополнительный текст ⏳</p>
+
+							<div class="form__item dropdown">
+								<label for="custom-select" class="form__item-title">Выбор чего-то*</label>
+								<button class="dropdown__btn">Выбор чего-то *</button>
+								<ul class="dropdown__list">
+										<li class="dropdown__item" data-value="option-1">Выбор 1</li>
+										<li class="dropdown__item" data-value="option-2">Выбор 2</li>
+										<li class="dropdown__item" data-value="option-3">Выбор 3</li>
+										<li class="dropdown__item" data-value="option-4">Выбор 4</li>
+										<li class="dropdown__item" data-value="option-5">Выбор 5</li>
+								</ul>
+								<input id="custom-select" class="dropdown__input-hidden" type="text" name="select-category">
+								<span class="form__error-box"></span>
+							</div>
+
+							<div class="form__item userphone">
+								<label for="userphone" class="form__item-title">Номер телефона*</label>
+								<input id="userphone" class="form__item-value" type="tel" name="userphone" placeholder="Номер телефона *">
+								<span class="form__error-box"></span>
+							</div>
+							
+							<div class="form__item textmess">
+								<label for="textmess" class="form__item-title">Коротко о чем-то ещё</label>
+								<textarea id="textmess" class="form__item-value" name="textmess" placeholder="Коротко о чем-то ещё"></textarea>
+							</div>
+
+							<div class="form__item upload">
+								<label for="file" class="upload__text">Прикрепить файл</label>
+								<input id="file" class="upload__value" type="file" name="upload" accept=".jpg, .pdf" multiple>
+							</div>
+
+							<button id="submit" class="btn form__btn">Кнопка</button>
+
+							<div class="form__popup popup">
+								<div class="popup__body">
+									<span class="popup__close"></span>
+									<p class="popup__title">Спасибо за обращение!</p>
+									<p class="popup__desc">Я расчитываю на долгосрочное сотрудничество с Вами!</p>
+								</div>
+							</div>
+						</form>
+
+						<p class="content__desc content__desc_294 content__desc_no-margin">Сверстать форму с учетом всех состояний.</p>
+
+					</div>
+
+					<div class="content__item tabs">
+						<div class="tabs__body">
+							<div class="tabs__nav">
+								<button class="tabs__nav-btn tabs__nav-btn_active" type="button" data-tab="#tab_1">1</button>
+								<button class="tabs__nav-btn" type="button" data-tab="#tab_2">2</button>
+								<button class="tabs__nav-btn" type="button" data-tab="#tab_3">3</button>
+							</div>
+							<div class="tabs__content">
+								<div class="tabs__item tabs__item_active" id="tab_1">
+									<h3 class="tabs__title">Заголовок 1</h3>
+									<p class="tabs__desc">Какой-то текст про очень важные вещи о которых нужно было написать внутри этих табов. - 1</p>
+								</div>
+								<div class="tabs__item" id="tab_2">
+									<h3 class="tabs__title">Заголовок 2</h3>
+									<p class="tabs__desc">Какой-то текст про очень важные вещи о которых нужно было написать внутри этих табов. - 2</p>
+								</div>
+								<div class="tabs__item" id="tab_3">
+									<h3 class="tabs__title">Заголовок 3</h3>
+									<p class="tabs__desc">Какой-то текст про очень важные вещи о которых нужно было написать внутри этих табов. - 3</p>
+								</div>
+							</div>
+						</div>
+						<p class="content__desc content__desc_294 content__desc_no-margin">Сверстать табы</p>
+					</div>
+
+				</section>
+
+			</main>
+
+			<footer class="footer">
+				<p class="footer__text text_white">Не стесняйтесь задавать вопросы по заданию, если они есть.</p>
+			</footer>
+
+		</div>
+		<script src="js/app.min.js"></script>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		
+			ym(76848919, "init", {
+					 clickmap:true,
+					 trackLinks:true,
+					 accurateTrackBounce:true,
+					 webvisor:true
+			});
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/76848919" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		
+	</body>
+</html>
